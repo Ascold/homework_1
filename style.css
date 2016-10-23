@@ -22,3 +22,28 @@ a.silver:hover {
 a.bronze:hover {
     color: #cd7f32;
 }
+
+@keyframes animation {
+0% {
+        width: 100px;
+    }
+100% {
+        width: 500px;
+    }
+}
+
+.anim {
+	background: green;
+	width: 100px;
+	height: auto;
+	margin-bottom: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+.anim:hover {
+	animation-name: animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background: green;
+}
